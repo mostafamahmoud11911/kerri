@@ -1,0 +1,319 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+.section {
+  padding: 5rem 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* *************start header********************* */
+#home {
+  height: 100vh;
+  background-image: url("../img/slider/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#home .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .layer .content h1 {
+  font-size: 60px;
+  padding: 15px 0;
+}
+#home .layer .content .btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 15px 25px;
+  margin: 10px 0;
+  transition: 0.3s;
+}
+#home .layer .content .btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999999999999;
+}
+.navbar ul li a {
+  color: #fff !important;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #d35c72 !important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-color: #fff;
+  }
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-brand .sm-img {
+    display: block !important;
+  }
+  .navbar-brand .md-img{
+    display: none !important;
+  }
+  .navbar ul li {
+    padding: 0;
+  }
+  .navbar ul li a {
+    color: #000 !important;
+  }
+  #home .layer .content{
+    padding-top: 5rem !important;
+  }
+  #home .layer .content h1 {
+    font-size: 35px;
+    padding: 10px 0;
+  }
+  #home .layer .content p{
+    padding: 10px;
+  }
+}
+/* ***************end header******************* */
+
+
+/* ****************start about********************* */
+.about-text h4 span {
+  color: #d35c72;
+}
+.about-text p {
+  line-height: 1.8;
+}
+.about-icon ul {
+  list-style: none;
+  padding: 0;
+  width: 35%;
+  display: inline;
+}
+.about-icon ul li {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+  transition: .3s;
+}
+.about-icon ul li:hover {
+  border: 2px solid #d35c72;
+}
+.about-icon ul li i {
+  font-size: 18px;
+  line-height: 1.8;
+  transition: .3s;
+}
+.about-icon ul li:hover i{
+color: #d35c72;
+}
+
+/* *******************end about********************** */
+
+
+/* ******************start services************************* */
+#service{
+  background-color: #F8F9FA;
+}
+
+.service-item{
+  border: 1px solid #e8e8e8;
+  padding: 30px 0 !important;
+  margin-top: 50px;
+}
+
+.service-item i{
+  color: #d35c72;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.service-item span{
+  width: 30px;
+  height: 2px;
+  background-color: #d35c72;
+  margin: 15px auto;
+  display: block;
+  transition: .3s;
+}
+.service-item:hover span{
+  width: 50px;
+}
+/* ********************end services************************ */
+/* *****************start single section**************** */
+.btn-hire{
+  margin: 20px 0;
+  padding: 15px 25px;
+  background-color: #d35c72;
+  color: #fff !important;
+}
+
+
+
+/* *****************end single section**************** */
+
+
+/* *****************start client***************************** */
+#client{
+  background-color: #F8F9FA;
+}
+#client .carousel-item i{
+  color: #d35c72;
+  font-size: 40px;
+  padding: 20px 0;
+}
+
+.carousel-indicators button{
+  background-color: #d35c72 !important;
+  width: 20px !important;
+  height: 3px !important;
+  border: 1px solid #d35c72 !important;
+  border-radius: 5px !important;
+}
+.carousel-indicators button.active{
+width: 30px !important;
+}
+
+/* *****************end client***************************** */
+
+
+/* *******************start portfolio************************* */
+.port{
+  position: relative;
+  overflow: hidden;
+}
+.port .layer{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: #fff;
+background-color: rgba(0, 0, 0, 0.7);
+opacity: 0;
+transition: 1s;
+}
+
+.port:hover .layer{
+  opacity: 1;
+}
+
+.port .layer .details{
+  position: relative;
+  top: 50%;
+  transition: .3s;
+}
+
+.port:hover .details{
+  top: 0;
+}
+.port img{
+  transition: .3s;
+}
+.port:hover img{
+  transform: scale(1.1);
+}
+
+#portfolio .nav{
+  border: 0 ;
+  justify-content: center ;
+  margin: 50px 0;
+}
+
+#portfolio .nav .nav-item{
+  margin-left: 10px;
+  padding-top: 7px;
+}
+#portfolio .nav button{
+  color: #000 ;
+  border: 0;
+  border-radius: 30px;
+  transition: .3s;
+}
+#portfolio .nav button.active{
+  background-color: #d35c72;
+  color: #fff;
+  padding: 10px 20px;
+}
+#portfolio .nav button:hover{
+background-color: #d35c72;
+color: #fff;
+}
+/* *********************end portfolio**************************** */
+
+/* *********************start blog************************ */
+#blog{
+  background-color: #F8F9FA;
+}
+#blog .blog-item a{
+  text-decoration: none;
+}
+#blog .blog-item .cap p .special{
+color: #d35c72;
+font-weight: bold;
+}
+/* ***********************end blog*********************** */
+
+/* **********************start contact************************ */
+#contact .contact-item i{
+color: #d35c72;
+font-size: 40px;
+margin-bottom: 20px;
+margin-top: 2rem;
+}
+#contact .btn{
+  margin: 20px 0;
+  padding: 15px 25px;
+  background-color: #d35c72;
+  color: #fff;
+}
+
+
+/* **********************end contact*************************** */
+
+/* ********************start footer******************** */
+#footer{
+  background-color: #212121;
+}
+#footer .footer-item span{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: rgba(241, 241, 241, 0.08);
+display: inline-block;
+margin: 0 5px;
+line-height: 2.5;
+transition: .3s;
+}
+#footer .footer-item span:hover i{
+  color: #d35c72;
+}
+/* **********************end footer************************ */
